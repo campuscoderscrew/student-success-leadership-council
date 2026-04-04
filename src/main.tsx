@@ -1,13 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import "./app.css";
 
 // import Crew from './src/pages/Crew';
 
-import About from './pages/about.js';
-import Committees from './pages/committees.js';
-import CommitteePage from './components/committee_page.js';
+import About from "./pages/about.js";
+import Committees from "./pages/committees.js";
+import CommitteePage from "./components/committee_page.js";
 
 export default function App() {
   return (
@@ -15,14 +16,32 @@ export default function App() {
       <Route path="/" element={<About />} />
       <Route path="about" element={<About />} />
       <Route path="committees" element={<Committees />} />
-      <Route path="committeepage" element={<CommitteePage/>} />
+      <Route
+        path="committeepage"
+        element={
+          <CommitteePage
+            title={"GIFT OF GIVING GALA"}
+            bannerImgSrc="placeholder.png"
+            gallery={[
+              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
+              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
+              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
+              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
+              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
+            ]}
+          >
+            <p>Child1</p>
+            <p>Child2</p>
+          </CommitteePage>
+        }
+      />
     </Routes>
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root')!);
+const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
+  </BrowserRouter>,
 );
