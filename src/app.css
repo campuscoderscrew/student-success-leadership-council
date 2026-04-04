@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Neuton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap");
 
 @import "tailwindcss";
 @tailwind base;
@@ -10,11 +11,12 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-notable: "Notable", sans-serif;
   --font-neuton: "Neuton";
+  --font-jaldi: "jaldi";
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply font-jaldi dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -29,13 +31,17 @@ body {
   font-family: var(--font-neuton);
 }
 
+.font-jaldi {
+  font-family: var(--font-jaldi);
+}
+
 @layer components {
   .hero-title-text {
-    @apply text-3xl md:text-5xl lg:text-7xl;
+    @apply text-3xl md:text-5xl lg:text-6xl;
   }
 
   .title-text {
-    @apply text-lg md:text-xl lg:text-2xl;
+    @apply text-lg md:text-xl lg:text-3xl;
   }
 
   .subtitle-text {
@@ -43,6 +49,6 @@ body {
   }
 
   .body-text {
-    @apply text-sm md:text-base lg:text-base;
+    @apply text-sm md:text-base lg:text-lg;
   }
 }

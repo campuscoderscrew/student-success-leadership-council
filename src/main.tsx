@@ -29,10 +29,7 @@ export default function App() {
               { caption: "lorem ipsum", imgSrc: "placeholder.png" },
               { caption: "lorem ipsum", imgSrc: "placeholder.png" },
             ]}
-          >
-            <p>Child1</p>
-            <p>Child2</p>
-          </CommitteePage>
+          />
         }
       />
     </Routes>
