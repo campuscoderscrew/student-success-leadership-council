@@ -15,7 +15,7 @@ export default function App() {
       <Route path="/" element={<About />} />
       <Route path="about" element={<About />} />
       <Route path="committees" element={<Committees />} />
-      <Route path="committeepage" element={<CommitteePage/>} />
+      <Route path="committeepage/:committee" element={<CommitteePage/>} />
     </Routes>
   );
 }
