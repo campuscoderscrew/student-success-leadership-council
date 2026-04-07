@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from "react";
 
 import NavBar from "./navbar";
+import GalleryCard from "./gallery_card";
 
 type Props = {
   title: string;
@@ -41,7 +42,8 @@ export default function CommitteePage(props: Props) {
 
         {/* Description */}
         <div
-          className={`${screenMarginX} grid sm:grid-cols-2 lg:grid-flow-col gap-12`}
+          className={`${screenMarginX} 
+            grid sm:grid-cols-2 lg:grid-flow-col gap-12`}
         >
           <img
             className="w-full object-cover 
@@ -107,16 +109,17 @@ export default function CommitteePage(props: Props) {
             Gallery & Highlights
           </h2>
 
-          <div className="grid grid-cols-3">
+          <div className="grid grid-cols-3 gap-8">
             {gallery.map(
               (
                 { caption, imgSrc }: { caption: string; imgSrc: string },
                 index: Number,
               ) => (
-                <div key={`gallery-image-${index}`}>
-                  <img className="object-cover" src={imgSrc} />
-                  <figcaption>{caption}</figcaption>
-                </div>
+                <GalleryCard
+                  key={`gallery-image-${index}`}
+                  caption={caption}
+                  imgSrc={imgSrc}
+                />
               ),
             )}
           </div>
