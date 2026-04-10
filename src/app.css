@@ -12,6 +12,8 @@
   --font-notable: "Notable", sans-serif;
   --font-neuton: "Neuton";
   --font-jaldi: "jaldi";
+
+  --breakpoint-xs: 30rem;
 }
 
 html,
@@ -37,7 +39,7 @@ body {
 
 @layer components {
   .hero-title-text {
-    @apply text-3xl md:text-5xl lg:text-6xl;
+    @apply text-3xl md:text-4xl lg:text-5xl;
   }
 
   .title-text {

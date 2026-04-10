@@ -21,13 +21,13 @@ export default function App() {
         element={
           <CommitteePage
             title={"GIFT OF GIVING GALA"}
-            bannerImgSrc="placeholder.png"
+            bannerImgSrc="giftOfGivingGala.png"
             gallery={[
-              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
-              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
-              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
-              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
-              { caption: "lorem ipsum", imgSrc: "placeholder.png" },
+              { caption: "Title Here", imgSrc: "placeholder.png" },
+              { caption: "Another Title", imgSrc: "placeholder.png" },
+              { caption: "lowercase", imgSrc: "placeholder.png" },
+              { caption: "UPPERCASE", imgSrc: "placeholder.png" },
+              { caption: "Title Here", imgSrc: "placeholder.png" },
             ]}
           />
         }
