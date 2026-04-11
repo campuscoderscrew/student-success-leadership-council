@@ -28,6 +28,7 @@ export default function App() {
               { caption: "lowercase", imgSrc: "placeholder.png" },
               { caption: "UPPERCASE", imgSrc: "placeholder.png" },
               { caption: "Title Here", imgSrc: "placeholder.png" },
+              { caption: "Title Here", imgSrc: "placeholder.png" },
             ]}
           />
         }

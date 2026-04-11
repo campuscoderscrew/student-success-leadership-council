@@ -11,7 +11,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-notable: "Notable", sans-serif;
   --font-neuton: "Neuton";
-  --font-jaldi: "jaldi";
+  --font-jaldi: "jaldi", sans-serif;
 
   --breakpoint-xs: 30rem;
 }
