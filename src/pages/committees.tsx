@@ -36,53 +36,55 @@ export default function Committees() {
             <div style={{ width: '200px', height: '200px', background: '#000000ff', borderRadius: '50%', position: 'absolute', top: '1250px', left: '-90px', zIndex: 0 }} />
             <div style={{ width: '200px', height: '200px', background: '#F3BF2D', borderRadius: '50%', position: 'absolute', bottom: '-70px', right: '-10px', zIndex: 0 }} />
 
-            {/* gift of giving gala */}
-            <div className="flex items-center gap-8 px-16 py-8 relative z-10">
-                <div style={{ width: '300px', height: '200px', border: '3px solid #F3BF2D', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
-                <div>
-                    <h2 className="text-2xl font-black text-black mb-2">Gift of Giving Gala</h2>
-                    <p className="text-black text-sm mb-4">SSLC's annual fundraiser. Celebrating Black student success at UMD.</p>
-                    <Link to="/committeepage/gala" style={{ border: '1px solid black' }} className="bg-[#F3BF2D] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+            <div className="mx-auto max-w-2xl">
+                {/* gift of giving gala */}
+                <div className="flex items-center gap-8 px-16 py-8 relative z-10">
+                    <div style={{ width: '300px', height: '200px', border: '3px solid #F3BF2D', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
+                    <div>
+                        <h2 className="text-2xl font-black text-black mb-2">Gift of Giving Gala</h2>
+                        <p className="text-black text-sm mb-4">SSLC's annual fundraiser. Celebrating Black student success at UMD.</p>
+                        <Link to="/committeepage/gala" style={{ border: '1px solid black' }} className="bg-[#F3BF2D] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+                    </div>
                 </div>
-            </div>
 
-            {/* political power project */}
-            <div className="flex items-center gap-8 px-16 py-8 relative z-10">
-                <div>
-                    <h2 className="text-2xl font-black text-black mb-2">Political Power Project</h2>
-                    <p className="text-black text-sm mb-4">Keeping students informed on political issues.</p>
-                    <Link to="/committeepage/political" style={{ border: '1px solid black' }} className="bg-[#D42021] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+                {/* political power project */}
+                <div className="flex items-center gap-8 px-16 py-8 relative z-10">
+                    <div>
+                        <h2 className="text-2xl font-black text-black mb-2">Political Power Project</h2>
+                        <p className="text-black text-sm mb-4">Keeping students informed on political issues.</p>
+                        <Link to="/committeepage/political" style={{ border: '1px solid black' }} className="bg-[#D42021] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+                    </div>
+                    <div style={{ width: '300px', height: '200px', border: '3px solid #D42021', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
                 </div>
-                <div style={{ width: '300px', height: '200px', border: '3px solid #D42021', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
-            </div>
 
-            {/* financial power project */}
-            <div className="flex items-center gap-8 px-16 py-8 relative z-10">
-                <div style={{ width: '300px', height: '200px', border: '3px solid #1C1008', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
-                <div>
-                    <h2 className="text-2xl font-black text-black mb-2">Financial Power Project</h2>
-                    <p className="text-black text-sm mb-4">Improving financial literacy at UMD.</p>
-                    <Link to="/committeepage/financial" style={{ border: '1px solid black' }} className="bg-[#1C1008] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+                {/* financial power project */}
+                <div className="flex items-center gap-8 px-16 py-8 relative z-10">
+                    <div style={{ width: '300px', height: '200px', border: '3px solid #1C1008', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
+                    <div>
+                        <h2 className="text-2xl font-black text-black mb-2">Financial Power Project</h2>
+                        <p className="text-black text-sm mb-4">Improving financial literacy at UMD.</p>
+                        <Link to="/committeepage/financial" style={{ border: '1px solid black' }} className="bg-[#1C1008] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+                    </div>
                 </div>
-            </div>
 
-            {/* leadership summit */}
-            <div className="flex items-center gap-8 px-16 py-8 relative z-10">
-                <div>
-                    <h2 className="text-2xl font-black text-black mb-2">Leadership Summit</h2>
-                    <p className="text-black text-sm mb-4">Empowering students to lead. Building skills and connections on campus.</p>
-                    <Link to="/committeepage/leadership" style={{ border: '1px solid black' }} className="bg-[#F3BF2D] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+                {/* leadership summit */}
+                <div className="flex items-center gap-8 px-16 py-8 relative z-10">
+                    <div>
+                        <h2 className="text-2xl font-black text-black mb-2">Leadership Summit</h2>
+                        <p className="text-black text-sm mb-4">Empowering students to lead. Building skills and connections on campus.</p>
+                        <Link to="/committeepage/leadership" style={{ border: '1px solid black' }} className="bg-[#F3BF2D] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+                    </div>
+                    <div style={{ width: '300px', height: '200px', border: '3px solid #F3BF2D', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
                 </div>
-                <div style={{ width: '300px', height: '200px', border: '3px solid #F3BF2D', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
-            </div>
 
-            {/* mentor program */}
-            <div className="flex items-center gap-8 px-16 py-8 relative z-10 mb-20">
-                <div style={{ width: '300px', height: '200px', border: '3px solid #D42021', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
-                <div>
-                    <h2 className="text-2xl font-black text-black mb-2">Mentor Program</h2>
-                    <p className="text-black text-sm mb-4">Connecting UMD with local youth. Inspiring the next generation.</p>
-                    <Link to="/committeepage/mentor" style={{ border: '1px solid black' }} className="bg-[#D42021] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+                {/* mentor program */}
+                <div className="flex items-center gap-8 px-16 py-8 relative z-10 mb-20">
+                    <div style={{ width: '300px', height: '200px', border: '3px solid #D42021', flexShrink: 0, borderRadius: '12px', background: 'white' }} />
+                    <div>
+                        <h2 className="text-2xl font-black text-black mb-2">Mentor Program</h2>
+                        <p className="text-black text-sm mb-4">Connecting UMD with local youth. Inspiring the next generation.</p>
+                        <Link to="/committeepage/mentor" style={{ border: '1px solid black' }} className="bg-[#D42021] text-white font-bold px-4 py-2 rounded">Learn More</Link>
+                    </div>
                 </div>
             </div>
 
